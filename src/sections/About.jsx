@@ -12,7 +12,7 @@ const About = () => {
           controls
           loop
           muted
-          className="animate-fadeIn delay-[200ms]"
+          className=""
           style={styles.video}
           //   onCanPlayThrough={onAssetsLoaded}
         />

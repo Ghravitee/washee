@@ -63,7 +63,7 @@ const App = () => {
         style={{
           margin: "10px",
           padding: "10px",
-          fontSize: "30px",
+          fontSize: "18px",
           position: "fixed",
           top: "5px",
           right: "5px",

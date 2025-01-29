@@ -34,7 +34,7 @@ body {
   display: flex;
   gap: 2rem;
   white-space: nowrap;
-  animation: scrollleft 10s linear infinite;
+  animation: scrollleft 15s linear infinite;
 }
 
 @keyframes scrollleft {
@@ -60,6 +60,6 @@ body {
   }
   .scrolling-text {
     gap: 1rem; /* Ensure proper spacing */
-    animation-duration: 12s; /* Slow down animation for mobile */
+    animation-duration: 15s; /* Slow down animation for mobile */
   }
 }

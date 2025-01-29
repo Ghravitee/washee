@@ -6,7 +6,7 @@ import theme from "./assets/MR_WASHEE_WASHEE.mp3";
 
 const App = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false); // State to track loading
+  const [isLoaded, setIsLoaded] = useState(false);
   const audioRef = useRef(null);
 
   useEffect(() => {
@@ -44,13 +44,24 @@ const App = () => {
   };
   return (
     <div>
-      {/* Loader */}
-      {/* {!isLoaded && (
+      {!isLoaded && (
         <div className="fixed inset-0 flex items-center justify-center bg-black text-white z-[1000]">
-          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-white"></div>
-          <p className="absolute top-3/4 text-lg">Loading...</p>
+          <button
+            className="bg-blue-500 text-white p-4 rounded-lg text-lg"
+            onClick={() => {
+              setIsLoaded(true);
+              const audioElement = audioRef.current;
+              if (audioElement) {
+                audioElement
+                  .play()
+                  .catch((err) => console.error("Error playing audio:", err));
+              }
+            }}
+          >
+            You may begin
+          </button>
         </div>
-      )} */}
+      )}
       {/* Background music */}
       <audio autoPlay loop ref={audioRef} id="audio">
         <source src={theme} type="audio/mpeg" />

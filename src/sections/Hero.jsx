@@ -46,7 +46,7 @@ const HeroSection = () => {
             variants={imageVariants}
           />
         </div>
-        <h1 className="arc uppercase font-bold text-[3rem] text-center text-white">
+        <h1 className="uppercase font-black text-[3rem] text-center text-white">
           MR WASHEE WASHEE
         </h1>
 

@@ -2,7 +2,7 @@ import washee from "../assets/washee-video.MP4";
 
 const About = () => {
   return (
-    <div className="">
+    <div className="mt-20">
       <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-white text-center ">
         About $MRWASHEE
       </h2>
@@ -10,7 +10,6 @@ const About = () => {
         <video
           src={washee}
           controls
-          autoPlay
           loop
           muted
           className="animate-fadeIn delay-[200ms]"
